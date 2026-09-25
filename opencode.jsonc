@@ -6,8 +6,7 @@
       "npm": "@ai-sdk/openai-compatible",
       "name": "Experiential Labs",
       "options": {
-        "baseURL": "https://api.experientiallabs.ai/v1",
-        "apiKey": "{env:EXPLABS_API_KEY}"
+        "baseURL": "https://api.experientiallabs.ai/v1"
       },
       "models": {
         "gpt-5.6-luna": {
@@ -50,10 +49,41 @@
           "cost": {
             "input": 0.021,
             "output": 0.042
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "none": {
+              "reasoningEffort": "none"
+            },
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
           }
         }
       }
     }
   },
-  "lsp": true
+  "lsp": true,
+  "plugin": [
+    "@tarquinen/opencode-dcp@latest"
+  ],
+  "mcp": {
+    "composio": {
+      "type": "remote",
+      "url": "https://connect.composio.dev/mcp",
+      "oauth": {},
+      "enabled": false
+    }
+  }
 }
