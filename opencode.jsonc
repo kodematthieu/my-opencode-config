@@ -1,24 +1,24 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "explabs/gpt-5.6-luna",
+  "model": "explabs/gpt-6-luna",
   "provider": {
     "explabs": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "Experiential Labs",
       "options": {
         "baseURL": "https://api.experientiallabs.ai/v1",
-        "apiKey": "{env:EXPLABS_API_KEY}"
+        "apiKey": "{env:XPL_API_KEY}"
       },
       "models": {
-        "gpt-5.6-luna": {
-          "name": "GPT-5.6 Luna",
+        "gpt-6-luna": {
+          "name": "GPT-6 Luna",
           "limit": {
             "context": 1050000,
             "output": 128000
           },
           "cost": {
-            "input": 0.2,
-            "output": 1.2
+            "input": 0.1,
+            "output": 0.5
           },
           "options": {
             "reasoningEffort": "medium"
@@ -50,6 +50,28 @@
           "cost": {
             "input": 0.021,
             "output": 0.042
+          }
+        },
+        "glm-5.3-flash-abliterated": {
+          "name": "GLM-5.3-Flash-Abliterated",
+          "limit": {
+            "context": 1050000,
+            "output": 131000
+          },
+          "cost": {
+            "input": 0.15,
+            "output": 0.5
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
           }
         }
       }
