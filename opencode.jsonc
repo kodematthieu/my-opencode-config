@@ -77,5 +77,9 @@
       }
     }
   },
-  "lsp": true
+  "lsp": true,
+  "permissions": [
+    { "action": "skill", "resource": "*", "effect": "allow" },
+    { "action": "skill", "resource": "axiom", "effect": "ask" }
+  ]
 }

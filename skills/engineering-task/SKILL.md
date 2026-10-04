@@ -1,6 +1,6 @@
 ---
 name: engineering-task
-description: Implement a scoped software-engineering change with repository-aware planning, minimal edits, focused tests, diff inspection, and evidence-based verification. Use when the user requests code, configuration, dependency, or test changes in an existing repository.
+description: "Implement a scoped software-engineering change with repository-aware planning, minimal edits, focused tests, diff inspection, and evidence-based verification. Use when the user requests code, configuration, dependency, or test changes in an existing repository. Not for diagnosing an existing failure, reviewing a finished change, or deciding whether the approach itself is sound."
 ---
 
 # Engineering Task

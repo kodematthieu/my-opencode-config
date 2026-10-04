@@ -1,6 +1,6 @@
 ---
 name: repository-orientation
-description: Map an unfamiliar software repository before making non-trivial changes by inspecting its structure, instructions, commands, architecture, tests, and generated-file boundaries. Use when the project layout, relevant code path, or verification commands are unclear.
+description: "Map an unfamiliar software repository before making non-trivial changes by inspecting its structure, instructions, commands, architecture, tests, and generated-file boundaries. Use when the project layout, relevant code path, or verification commands are unclear. Not for making the change itself, reviewing a diff, or diagnosing a failure."
 ---
 
 # Repository Orientation
