@@ -1,9 +1,13 @@
 ---
 description: Generate and compare well-scoped options for a product, architecture, prompt, workflow, or implementation decision before committing to a plan.
 mode: primary
-permission:
-  edit: deny
-  bash: ask
+permissions:
+  - action: edit
+    resource: "*"
+    effect: deny
+  - action: shell
+    resource: "*"
+    effect: ask
 ---
 
 # Brainstorm
