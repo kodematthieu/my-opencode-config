@@ -1,13 +1,17 @@
 ---
 name: prompt-security-review
-description: Audit prompts, skills, tools, agent workflows, repositories, and dependencies for prompt injection, secret exposure, excessive agency, unsafe commands, path or network risks, output handling, and supply-chain threats. Use for security review or before granting new agent capabilities.
+description: "Audit prompts, skills, tools, agent workflows, repositories, and dependencies for prompt injection, secret exposure, excessive agency, unsafe commands, path or network risks, output handling, and supply-chain threats. Use for security review or before granting new agent capabilities. Not for general correctness or regression review, designing a prompt rather than auditing it, or judging whether an argument or framing is sound."
 ---
 
 # Prompt Security Review
 
 ## Purpose
 
-Assess the complete system boundary around an AI workflow. Natural-language instructions are one layer of defense and never replace authorization, sandboxing, validation, approval, or least-privilege runtime controls.
+Assess the complete system boundary around an AI workflow: trust boundaries, unauthorized capability, secret exposure, and side effects. Natural-language instructions are one layer of defense and never replace authorization, sandboxing, validation, approval, or least-privilege runtime controls.
+
+## On-demand reference
+
+`references/threat-catalog.md` lists what to inspect: direct and indirect injection, instruction/data confusion, secret exposure, excessive agency, unsafe commands and paths, output handling, and supply-chain risk. Read it before auditing so the sweep is complete.
 
 ## Procedure
 

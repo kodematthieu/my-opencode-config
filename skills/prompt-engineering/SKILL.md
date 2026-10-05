@@ -1,6 +1,6 @@
 ---
 name: prompt-engineering
-description: Design, analyze, or improve system prompts, developer instructions, agent prompts, skills, tool contracts, routing, output schemas, and prompt evaluations. Use when prompt behavior, context structure, model adaptation, workflow, or instruction quality needs work.
+description: "Design, analyze, or improve system prompts, developer instructions, agent prompts, skills, tool contracts, routing, output schemas, and prompt evaluations. Use when prompt behavior, context structure, model adaptation, workflow, or instruction quality needs work. Not for auditing a prompt for injection or secret risk, or reviewing prompts as ordinary artifacts."
 ---
 
 # Prompt Engineering
@@ -8,6 +8,11 @@ description: Design, analyze, or improve system prompts, developer instructions,
 ## Purpose
 
 Treat prompts as versioned behavioral interfaces, not magic prose. Design for observable outcomes, bounded authority, reliable context use, and measurable evaluation.
+
+## On-demand references
+
+- `references/provider-claims.md` — what to verify before encoding provider-specific behavior, and which claims are commonly wrong. Read before relying on a context size, caching rule, reasoning control, structured-output feature, or tool-call shape.
+- `references/evaluation.md` — how to size an evaluation set, compare prompt variants, calibrate a judge model, and report results honestly. Read before claiming a prompt change improved anything.
 
 ## Procedure
 

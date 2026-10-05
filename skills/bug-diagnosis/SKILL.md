@@ -1,6 +1,6 @@
 ---
 name: bug-diagnosis
-description: Diagnose and repair software failures through reproduction, root-cause analysis, regression tests, and bounded verification. Use for bugs, failing tests, build errors, runtime errors, incorrect generated output, or unexpected behavior.
+description: "Diagnose and repair software failures through reproduction, root-cause analysis, regression tests, and bounded verification. Use for bugs, failing tests, build errors, runtime errors, incorrect generated output, or unexpected behavior. Not for reviewing a change you are not repairing, or auditing a system boundary."
 ---
 
 # Bug Diagnosis
@@ -8,6 +8,8 @@ description: Diagnose and repair software failures through reproduction, root-ca
 ## Purpose
 
 Fix the cause of a failure rather than suppressing its symptom. Keep diagnosis, repair, and verification distinct enough that the evidence for the fix remains visible.
+
+This skill assumes the goal is a repair with a regression check, not only an explanation.
 
 ## Procedure
 
@@ -40,6 +42,8 @@ Report:
 - regression test or verification path;
 - commands and results;
 - unresolved uncertainty and residual risk.
+
+For each check, state expected versus actual. List checks you ran, checks you skipped and why, and any area left unverified. A regression check that could not run is not evidence of a fix; say so explicitly rather than implying the failure is resolved.
 
 ## Safety
 
