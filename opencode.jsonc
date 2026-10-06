@@ -50,6 +50,26 @@
           "cost": {
             "input": 0.021,
             "output": 0.042
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "none": {
+              "reasoningEffort": "none"
+            },
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            },
+            "max": {
+              "reasoningEffort": "max"
+            }
           }
         },
         "glm-5.3-flash-abliterated": {
@@ -81,5 +101,16 @@
   "permissions": [
     { "action": "skill", "resource": "*", "effect": "allow" },
     { "action": "skill", "resource": "axiom", "effect": "ask" }
-  ]
+  ],
+  "plugin": [
+    "@tarquinen/opencode-dcp@latest"
+  ],
+  "mcp": {
+    "composio": {
+      "type": "remote",
+      "url": "https://connect.composio.dev/mcp",
+      "oauth": {},
+      "enabled": false
+    }
+  }
 }
