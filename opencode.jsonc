@@ -140,9 +140,20 @@
     }
   },
   "lsp": true,
+  "instructions": [
+    "~/.agents/AGENTS.md"
+  ],
   "permissions": [
     { "action": "skill", "resource": "*", "effect": "allow" },
-    { "action": "skill", "resource": "axiom", "effect": "ask" }
+    { "action": "shell", "resource": "git push*", "effect": "ask" },
+    { "action": "shell", "resource": "git reset --hard*", "effect": "ask" },
+    { "action": "shell", "resource": "git clean -fd*", "effect": "ask" },
+    { "action": "shell", "resource": "rm -rf*", "effect": "ask" },
+    { "action": "shell", "resource": "sudo*", "effect": "deny" },
+    { "action": "shell", "resource": "curl*", "effect": "ask" },
+    { "action": "shell", "resource": "wget*", "effect": "ask" },
+    { "action": "shell", "resource": "gh *", "effect": "ask" },
+    { "action": "shell", "resource": "npm publish*", "effect": "ask" }
   ],
   "plugin": [
     "@tarquinen/opencode-dcp@latest"
